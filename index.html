@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MemoryMatch</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Juego de Memoria</h1>
+
+  <div style="margin-bottom: 1rem;">
+    <label>Selecciona un tema: </label>
+    <select id="tema">
+      <option value="frutas">Frutas</option>
+      <option value="animales">Animales</option>
+      <option value="postres">Postres</option>
+    </select>
+  </div>
+
+  <p>
+    Intentos: <span id="intentos">0</span> |
+    Tiempo restante: <span id="tiempo">60</span>s
+  </p>
+
+  <div id="mensaje" class="oculto"></div>
+
+  <div class="game-board" id="game-board"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
